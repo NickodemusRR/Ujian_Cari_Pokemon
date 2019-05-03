@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pokemon.json()['name']}}</title>
+</head>
+<body style="text-align:center">
+    <h1>Hasil Pencarian</h1>
+    <p>Nama: {{pokemon.json()['name']}}</p>
+    <p>ID: {{pokemon.json()['id']}}</p>
+    <p>Tinggi: {{pokemon.json()['height']}}</p>
+    <p>Berat: {{pokemon.json()['weight']}}</p>
+    <img src="{{pokemon.json()['sprites']['front_default']}}"/>
+    <form action="http://localhost:5000/", method="GET">
+        <input type="submit" value="Kembali"/>
+    </form>
+</body>
+</html>
